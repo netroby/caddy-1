@@ -4,7 +4,7 @@
 FROM golang:1.9-alpine as build
 
 ARG version="0.10.10"
-ARG plugins=""
+ARG plugins="tls.dns.cloudflare"
 
 RUN apk add --no-cache git
 
